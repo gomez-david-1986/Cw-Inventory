@@ -1,0 +1,15 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+.BackgroundImg {
+
+    background: url("../images/20220924-JDGM-09435.jpg");
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /*background-position: center center;*/
+
+    border: 20px solid rgba(255, 255, 255, 0.5);
+}
