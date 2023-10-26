@@ -16,11 +16,12 @@
 
             $statement->closeCursor();
 
-            return $Events;
+
         } catch (PDOException $e) {
             $Error_Message = $e->getMessage();
             header("Location: 404.php?error=" . $Error_Message);
         }
+        return $Events;
     }
 
     function get_employee_log_in_details($EmployeeID) {
@@ -58,8 +59,11 @@
 
             $statement->closeCursor();
 
-            return $Events;
+
         } catch (PDOException $e) {
             header("Location:404.php?error=" . $e->getMessage());
         }
+
+        return $Events;
+
     }

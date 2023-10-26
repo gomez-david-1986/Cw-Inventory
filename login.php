@@ -32,18 +32,18 @@
                           novalidate="" role="form">
 
                         <div class="form-group mt-1">
-                            <label>
+                            <label for="email">
                                 Email
                             </label>
                             <input class="form-control rounded-0" id="email" name="login-email"
-                                   required type="email">
+                                                              required type="email">
 
                         </div>
                         <div class="form-group mt-1">
-                            <label>
+                            <label for="password">
                                 Password
                             </label>
-                            <input class="form-control form-control-lg rounded-0" name="login-password" required
+                            <input class="form-control form-control-lg rounded-0" id="password" name="login-password" required
                                    type="password">
 
                         </div>
@@ -62,6 +62,7 @@
 
 </main>
 
-<script src="index.js"></script>
+
+<script src="assets/js/bootstrap.js"></script>
 </body>
 </html>

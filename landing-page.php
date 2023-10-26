@@ -43,6 +43,6 @@ if ($UserLevel < 9) {
 
 </main>
 
-<script src="index.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
