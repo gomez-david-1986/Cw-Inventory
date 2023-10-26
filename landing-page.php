@@ -1,4 +1,26 @@
-<!DOCTYPE html>
+<?php
+
+
+include 'code/config.php';
+page_protect();
+
+require('code/db.php');
+require('code/db.php');
+
+$emp_name = $_SESSION['employee_name'];
+$emp_id   = $_SESSION['employee_id'];
+
+
+$RS_user_level = get_emp_level($emp_id);
+$UserLevel     = $RS_user_level['level'];
+
+if ($UserLevel < 9) {
+
+    header("Location:404.php?error=" . "You do not have access to this page this incident will be reported");
+}
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +38,8 @@
 <body>
 
 <main class="form-signin">
+
+
 
 </main>
 
