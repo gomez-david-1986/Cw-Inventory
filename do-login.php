@@ -11,7 +11,7 @@
         $DP[$key] = $value; // POST variables are filtered
     }
 
-    if ('login' == $DG['action']) {
+    if ($DG['action'] == 'login') {
 
         $Email    = $DP['login-email'];
         $Password = $DP['login-password'];
@@ -54,7 +54,7 @@
 
     }
 
-    if ('logout' == $DG['action']) {
+    if ( $DG['action'] == 'logout') {
         logout();
     }
 

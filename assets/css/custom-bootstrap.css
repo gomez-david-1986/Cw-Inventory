@@ -3,7 +3,7 @@
 
 .BackgroundImg {
 
-    background: url("background.jpg");
+    background: url("../images/background.jpg");
 
     position: absolute;
     height: 100%;
