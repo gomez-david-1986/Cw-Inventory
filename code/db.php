@@ -1,4 +1,5 @@
 <?php
+
     $dns      = 'mysql:host=localhost;dbname=template';
     $username = 'dgomez';
     $password = 'template_psw';

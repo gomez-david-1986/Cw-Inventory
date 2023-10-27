@@ -1,8 +1,7 @@
 <?php
-
     include 'code/config.php';
     include 'code/db.php';
-    include 'code/login_db.php';
+    include 'code/employee_db.php';
 
     foreach ($_GET as $key => $value) {
         $DG[$key] = $value; // GET variables are filtered
@@ -12,7 +11,7 @@
         $DP[$key] = $value; // POST variables are filtered
     }
 
-    if ($DG["action"] == 'login') {
+    if ('login' == $DG['action']) {
 
         $Email    = $DP['login-email'];
         $Password = $DP['login-password'];
@@ -20,54 +19,43 @@
         $rs = get_password_for_employee($Email);
 
         if (is_array($rs)) {
-
             if (password_verify($Password, $rs['email_pwd'])) {
-
                 $employee_details = get_employee_log_in_details($rs['employee_id']);
 
                 if (is_array($employee_details)) {
-
                     session_start();
                     session_regenerate_id(true);
 
                     // this sets variables in the session
                     $_SESSION['employee_id']     = $employee_details['employee_id'];
                     $_SESSION['employee_name']   = $employee_details['name'] . ' ' . $employee_details['last_name'];
-                    $_SESSION['user_level']      = $employee_details["level"];
+                    $_SESSION['user_level'] = $employee_details['level'];
                     $_SESSION['HTTP_USER_AGENT'] = md5($_SERVER['HTTP_USER_AGENT']);
 
-//                    $_SESSION['start_time'] = time();
+                    //                    $_SESSION['start_time'] = time();
 
-
-                    if ($employee_details["level"] == 99) {
+                    if (99 == $employee_details['level']) {
                         header('Location:landing-page.php');           // SUPER USER
-                    }else{
+                    } else {
                         header('Location:login.php?Error4');
                     }
-
                 } else {
-                    //Error Fetching Customer Data
+                    // Error Fetching Customer Data
                     header('Location:login.php?Error1');
                 }
             } else {
-                //Password Is Not Valid
+                // Password Is Not Valid
                 header('Location:login.php?Error2');
             }
         } else {
-            //Email Not Found On The DB
+            // Email Not Found On The DB
             header('Location:login.php?Error3');
         }
+
     }
 
-
-    if ($DG["action"] == 'logout') {
-
+    if ('logout' == $DG['action']) {
         logout();
-
     }
-
-
-
-
 
 

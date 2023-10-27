@@ -28,22 +28,22 @@
                     </h3>
                 </div>
                 <div class="card-body">
-                    <form action="do_login.php?action=login" autocomplete="off" class="form" method="POST"
-                          novalidate="" role="form">
+                    <form action="do-login.php?action=login" autocomplete="off" class="form" method="POST">
 
                         <div class="form-group mt-1">
                             <label for="email">
                                 Email
                             </label>
                             <input class="form-control rounded-0" id="email" name="login-email"
-                                                              required type="email">
+                                   required type="email">
 
                         </div>
                         <div class="form-group mt-1">
                             <label for="password">
                                 Password
                             </label>
-                            <input class="form-control form-control-lg rounded-0" id="password" name="login-password" required
+                            <input class="form-control form-control-lg rounded-0" id="password" name="login-password"
+                                   required
                                    type="password">
 
                         </div>

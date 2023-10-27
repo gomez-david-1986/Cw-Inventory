@@ -7,6 +7,7 @@
         $query = "SELECT employee_id, email_pwd  from employee where email = :Email and status = 'ACTIVE' ";
 
         try {
+
             $statement = $db->prepare($query);
             $statement->bindValue(":Email", $Email, PDO::PARAM_STR);
 
@@ -17,11 +18,11 @@
             $statement->closeCursor();
 
 
+            return $Events;
         } catch (PDOException $e) {
-            $Error_Message = $e->getMessage();
-            header("Location: 404.php?error=" . $Error_Message);
+            return $e->getMessage();
         }
-        return $Events;
+
     }
 
     function get_employee_log_in_details($EmployeeID) {

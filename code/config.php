@@ -3,11 +3,18 @@
     setlocale(LC_MONETARY, "en_US.UTF-8");
     date_default_timezone_set('America/New_York');
 
+    global $template;
 
-    $_test = "cosa";
+    $template = [
+        'name' => 'Template Appliance',
+        'version' => '1.0',
+        'author' => 'David Gomez',
+        'robots' => 'noindex, nofollow',
+        'title' => "Title",
+        'description' => 'Description'];
 
 
-    function page_protect() {
+    function page_protect(): void {
 
         session_start();
 
@@ -38,6 +45,3 @@
 
         header("Location: login.php");
     }
-
-
-?>
