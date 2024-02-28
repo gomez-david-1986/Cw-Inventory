@@ -1,0 +1,32 @@
+CREATE USER 'dgomez'@'localhost' IDENTIFIED BY 'template_psw';
+GRANT ALL PRIVILEGES ON *.* TO 'dgomez'@'localhost';
+FLUSH PRIVILEGES;
+
+CREATE DATABASE template;
+USE template;
+
+CREATE TABLE employee
+(
+    employee_id     int AUTO_INCREMENT
+        PRIMARY KEY,
+    name            varchar(60) CHARSET utf8                  NULL,
+    last_name       varchar(60) CHARSET utf8                  NULL,
+    work_phone      varchar(60) CHARSET utf8                  NULL,
+    email           varchar(60) CHARSET utf8                  NULL,
+    status          varchar(60) CHARSET utf8 DEFAULT 'ACTIVE' NOT NULL,
+    level           tinyint                  DEFAULT 1        NOT NULL,
+    email_pwd       varchar(200) CHARSET utf8                 NULL,
+    reset_psw_token varchar(250) CHARSET utf8                 NULL,
+    token_exp       timestamp                                 NULL
+)
+    COLLATE = utf8_unicode_ci;
+
+INSERT INTO template.employee (employee_id, name, last_name, work_phone, email, status, level, email_pwd,
+                               reset_psw_token, token_exp)
+VALUES (1, 'DAVID', 'GOMEZ', '132-525-3320', 'dgomez@mylogicweb.com', 'ACTIVE', 99,
+        '$2y$13$DZWaa5rataEXWoYph2.v/OtNDxr4T.co.6KDzqM8lRgZHkY3A.4dq', 'null', NULL);
+INSERT INTO template.employee (employee_id, name, last_name, work_phone, email, status, level, email_pwd,
+                               reset_psw_token, token_exp)
+VALUES (2, 'TEST', 'GOMEZ', '132-525-3320', 'dgomez@mylogicweb.com', 'ACTIVE', 99,
+        '$2y$13$DZWaa5rataEXWoYph2.v/OtNDxr4T.co.6KDzqM8lRgZHkY3A.4dq', 'null', NULL);
+
