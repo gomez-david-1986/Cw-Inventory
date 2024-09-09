@@ -1,8 +1,8 @@
 <?php
 
-    $dns      = 'mysql:host=localhost;dbname=template';
-    $username = 'dgomez';
-    $password = 'template_psw';
+    $dns      = 'mysql:host=localhost;dbname=mylogicw_inventory';
+    $username = 'mylogicw_dgmaya';
+    $password = 'je*qZ0OHit4,@bD+mO';
 
     try {
 
