@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="6788bbbe-4173-418f-b0bb-b17f1f5e7345" name="LocalTestServer" url="inventory.mylogicweb.com">
-        <fileTransfer rootFolder="/home/mylogicw/inventory.mylogicweb.com" accessType="SFTP" host="mylogicweb.com" port="22" sshConfigId="def953fa-79be-4552-ac84-d62d6018554e" sshConfig="mylogicw@mylogicweb.com:22 password">
+        <fileTransfer rootFolder="/home/mylogicw/inventory.mylogicweb.com/" accessType="SFTP" host="mylogicweb.com" port="22" sshConfigId="def953fa-79be-4552-ac84-d62d6018554e" sshConfig="mylogicw@mylogicweb.com:22 password">
           <advancedOptions>
             <advancedOptions keepAliveTimeout="0" />
           </advancedOptions>

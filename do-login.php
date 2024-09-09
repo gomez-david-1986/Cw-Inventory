@@ -35,7 +35,7 @@
                     //                    $_SESSION['start_time'] = time();
 
                     if (99 == $employee_details['level']) {
-                        header('Location:Dashboard.php');           // SUPER USER
+                        header('Location:dashboard.php');           // SUPER USER
                     } else {
                         header('Location:login.php?Error4');
                     }
