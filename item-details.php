@@ -40,7 +40,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
 <main class="m-3">
 
     <div class="row text-center">
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-2">
             <div class="card  h-100">
                 <div class="card-body text-center">
                     <h5><?= $item->getProductName() ?></h5>
@@ -50,7 +50,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-2">
             <div class="card  h-100">
                 <div class="card-body text-center">
                     <h5>Category</h5>
@@ -60,7 +60,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-2">
             <div class="card  h-100">
                 <div class="card-body text-center">
 
@@ -75,7 +75,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
 
             </div>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-2">
             <div class="card  h-100">
                 <div class="card-body text-center">
                     <h5>Available</h5>
@@ -89,7 +89,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
 
             </div>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-2">
             <div class="card  h-100">
                 <div class="card-body text-center">
                     <h5>Loanable</h5>
@@ -102,7 +102,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 mt-2">
             <div class="card  h-100">
                 <div class="card-body text-center">
                     <h5>Location</h5>
@@ -117,7 +117,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
     </div>
 
     <div class="row mt-3">
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
@@ -171,7 +171,7 @@ require_once 'assets/qr-generator/phpqrcode/qrlib.php';
             </div>
         </div>
 
-        <div class="col-8"><h1>right</h1></div>
+        <div class="col-lg-8 col-md-6 col-sm-12"><h1>right</h1></div>
 
     </div>
 

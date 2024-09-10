@@ -6,7 +6,7 @@
     global $template;
 
     $template = [
-        'name' => 'Template Appliance',
+        'name' => 'Template',
         'version' => '1.0',
         'author' => 'David Gomez',
         'robots' => 'noindex, nofollow',

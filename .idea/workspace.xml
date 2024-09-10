@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09a054b2-4fc5-466e-980f-57dc2a171115" name="Changes" comment="Add new cache masks for QR generation and remove old schemas">
+    <list default="true" id="09a054b2-4fc5-466e-980f-57dc2a171115" name="Changes" comment="Update href attribute and clean up configuration files">
+      <change afterPath="$PROJECT_DIR$/classes/ItemEventLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/item_event_log_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_events.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/html-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/html-header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/item-details.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,43 +85,44 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;PHP Web Page.LocalHost.executor&quot;: &quot;Run&quot;,
-    &quot;PHP Web Page.Mylogicweb.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dgmaya.WBI.000/PhpstormProjects/Cw-Inventory/assets&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.add.doc.comment.for.fields.panel.add.php.doc&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "PHP Web Page.LocalHost.executor": "Run",
+    "PHP Web Page.Mylogicweb.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/dgmaya.WBI.000/PhpstormProjects/Cw-Inventory",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.add.doc.comment.for.fields.panel.add.php.doc": "false",
+    "settings.editor.selected.configurable": "preferences.sourceCode.PHP",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dgmaya.WBI.000\PhpstormProjects\Cw-Inventory" />
+      <recent name="C:\Users\dgmaya.WBI.000\PhpstormProjects\Cw-Inventory\code" />
       <recent name="C:\Users\dgmaya.WBI.000\PhpstormProjects\Cw-Inventory\assets" />
       <recent name="C:\Users\dgmaya.WBI.000\PhpstormProjects\Cw-Inventory\Qr" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dgmaya.WBI.000\PhpstormProjects\Cw-Inventory\assets\images" />
@@ -155,7 +162,8 @@
       <workItem from="1698440139691" duration="75000" />
       <workItem from="1725886399614" duration="658000" />
       <workItem from="1725887219019" duration="15900000" />
-      <workItem from="1725909025581" duration="276000" />
+      <workItem from="1725909025581" duration="432000" />
+      <workItem from="1725971407629" duration="4977000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -205,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725909104394</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update href attribute and clean up configuration files">
+      <option name="closed" value="true" />
+      <created>1725909391417</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725909391417</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +247,8 @@
     <MESSAGE value="added basic db config" />
     <MESSAGE value="finish basic configuration for web application template" />
     <MESSAGE value="Add new cache masks for QR generation and remove old schemas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new cache masks for QR generation and remove old schemas" />
+    <MESSAGE value="Update href attribute and clean up configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update href attribute and clean up configuration files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
