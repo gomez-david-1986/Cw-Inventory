@@ -9,7 +9,7 @@ if (empty($_GET['id'])) {
     // Do not return anything to the browser
     ob_start("callback");
     // Process the input string
-    $codeText = 'https://inventory.mylogicweb.com/item-details.php?action=view&item_id=' . $inputString;
+    $codeText = 'https://inventory.mylogicweb.com/equipment-details.php?action=view&item_id=' . $inputString;
     // end of processing
     $debugLog = ob_get_contents();
     ob_end_clean();

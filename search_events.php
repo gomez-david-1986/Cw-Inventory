@@ -3,7 +3,7 @@
     page_protect();
     require('code/db.php');
     require('code/employee_db.php');
-    require('code/item_event_log_db.php');
+    require('code/equipment_event_log_db.php');
     
     $employee_name = $_SESSION['employee_name'];
     $employeeID    = $_SESSION['employee_id'];
@@ -64,7 +64,7 @@
                                 <td><?= $item['old_status'] ?></td>
                                 <td><?= $item['new_status'] ?></td>
                                 <td class="text-center">
-                                    <a href="item-details.php?action=view&item_id=<?= $item['item_id']; ?>"
+                                    <a href="equipment-details.php?action=view&item_id=<?= $item['item_id']; ?>"
                                             class="btn btn-icon btn-primary btn-sm"
                                             title="Open"><i class="fa fa-folder-open"></i></a></td>
                             </tr>

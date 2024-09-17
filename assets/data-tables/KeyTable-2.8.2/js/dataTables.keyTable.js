@@ -993,7 +993,7 @@
          * both DataTables scrolling and native window scrolling.
          *
          * @param  {jQuery} container Scrolling container
-         * @param  {jQuery} scroller  Item being scrolled
+         * @param  {jQuery} scroller  Equipment being scrolled
          * @param  {jQuery} cell      Cell in the scroller
          * @param  {string} posOff    `position` or `offset` - which to use for the
          *   calculation. `offset` for the document, otherwise `position`

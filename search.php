@@ -3,7 +3,7 @@
     page_protect();
     require('code/db.php');
     require('code/employee_db.php');
-    require('code/item_db.php');
+    require('code/equipment_db.php');
     
     $employee_name = $_SESSION['employee_name'];
     $employeeID    = $_SESSION['employee_id'];
@@ -11,7 +11,7 @@
     $RS_user_level  = get_emp_level($employeeID);
     $employee_level = $RS_user_level['level'];
     
-    $rs_items = getAllItems();
+    $rs_eqipment = getAllItems();
     
     print_r($rs);
 
@@ -26,7 +26,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="text-center">Items</h3>
+                    <h3 class="text-center">Equipment</h3>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" class="btn btn-sm btn-success"
@@ -50,26 +50,25 @@
                             <th>Loanable</th>
                             <th>status</th>
                             <th class="text-center">action</th>
-
                         </tr>
                         </thead>
                         <tbody>
                         
-                        <?php foreach ($rs_items as $item): ?>
+                        <?php foreach ($rs_eqipment as $equipment): ?>
 
                             <tr>
-                                <td><?= $item['item_id']; ?></td>
-                                <td><?= $item['product_name']; ?></td>
-                                <td><?= $item['category']; ?></td>
-                                <td><?= $item['manufacturer']; ?></td>
-                                <td><?= $item['location']; ?></td>
-                                <td><?= $item['serial']; ?></td>
-                                <td><?= $item['active'] ?></td>
-                                <td><?= $item['available'] ?></td>
-                                <td><?= $item['loanable'] ?></td>
-                                <td><?= $item['status'] ?></td>
+                                <td><?= $equipment['equipment_id']; ?></td>
+                                <td><?= $equipment['product_name']; ?></td>
+                                <td><?= $equipment['category']; ?></td>
+                                <td><?= $equipment['manufacturer']; ?></td>
+                                <td><?= $equipment['location']; ?></td>
+                                <td><?= $equipment['serial']; ?></td>
+                                <td><?= $equipment['active'] ?></td>
+                                <td><?= $equipment['available'] ?></td>
+                                <td><?= $equipment['loanable'] ?></td>
+                                <td><?= $equipment['status'] ?></td>
                                 <td class="text-center">
-                                    <a href="item-details.php?action=view&item_id=<?= $item['item_id']; ?>"
+                                    <a href="equipment-details.php?action=view&equipment_id=<?= $equipment['equipment_id']; ?>"
                                             class="btn btn-icon btn-primary btn-sm"
                                             title="Open"><i class="fa fa-folder-open"></i></a></td>
                             </tr>

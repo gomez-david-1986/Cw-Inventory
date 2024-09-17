@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09a054b2-4fc5-466e-980f-57dc2a171115" name="Changes" comment="Update href attribute and clean up configuration files">
-      <change afterPath="$PROJECT_DIR$/classes/ItemEventLog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/item_event_log_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search_events.php" afterDir="false" />
+    <list default="true" id="09a054b2-4fc5-466e-980f-57dc2a171115" name="Changes" comment="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout.">
+      <change afterPath="$PROJECT_DIR$/jira/sample1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/html-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/html-header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/item-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/data-tables/KeyTable-2.8.2/js/dataTables.keyTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-tables/KeyTable-2.8.2/js/dataTables.keyTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/data-tables/datatables.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-tables/datatables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/data-tables/jQuery-3.6.0/jquery-3.6.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-tables/jQuery-3.6.0/jquery-3.6.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Equipment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/ItemEventLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/EquipmentEventLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/item_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/equipment_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/item_event_log_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/equipment_event_log_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate.php" beforeDir="false" afterPath="$PROJECT_DIR$/generate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipment-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_events.php" beforeDir="false" afterPath="$PROJECT_DIR$/search_events.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -85,37 +92,38 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "PHP Web Page.LocalHost.executor": "Run",
-    "PHP Web Page.Mylogicweb.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/dgmaya.WBI.000/PhpstormProjects/Cw-Inventory",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "php.add.doc.comment.for.fields.panel.add.php.doc": "false",
-    "settings.editor.selected.configurable": "preferences.sourceCode.PHP",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;PHP Web Page.LocalHost.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Web Page.Mylogicweb.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dgmaya.WBI.000/PhpstormProjects/Cw-Inventory&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.add.doc.comment.for.fields.panel.add.php.doc&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PHP&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dgmaya.WBI.000\PhpstormProjects\Cw-Inventory" />
@@ -132,6 +140,9 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Mylogicweb" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Unnamed" start_url="/template/login.php">
+      <method v="2" />
+    </configuration>
     <configuration name="Mylogicweb" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Unnamed" start_url="/template/login.php">
       <method v="2" />
     </configuration>
@@ -163,7 +174,10 @@
       <workItem from="1725886399614" duration="658000" />
       <workItem from="1725887219019" duration="15900000" />
       <workItem from="1725909025581" duration="432000" />
-      <workItem from="1725971407629" duration="4977000" />
+      <workItem from="1725971407629" duration="5679000" />
+      <workItem from="1726515665004" duration="818000" />
+      <workItem from="1726575500943" duration="2067000" />
+      <workItem from="1726602160901" duration="4075000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -221,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725909391417</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout.">
+      <option name="closed" value="true" />
+      <created>1725979313723</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725979313723</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +270,8 @@
     <MESSAGE value="finish basic configuration for web application template" />
     <MESSAGE value="Add new cache masks for QR generation and remove old schemas" />
     <MESSAGE value="Update href attribute and clean up configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update href attribute and clean up configuration files" />
+    <MESSAGE value="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
