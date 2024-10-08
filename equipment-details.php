@@ -186,10 +186,6 @@ $rs_equipment_event_log = get_equipment_event_log_for_item($equipment->getEquipm
                         <tr>
                             <th>TimeStamp</th>
                             <th>change_type</th>
-                            <th>action</th>
-
-                            <th>old_status</th>
-                            <th>new_status</th>
                             <th>Field</th>
                             <th>From</th>
                             <th>To</th>
@@ -202,10 +198,6 @@ $rs_equipment_event_log = get_equipment_event_log_for_item($equipment->getEquipm
                             <tr class="<?= ($equipment_log["update_status"] == 0 )? "table-danger" : "" ?>">
                                 <td><?= $equipment_log["timestamp"] ?></td>
                                 <td><?= $equipment_log["change_type"] ?></td>
-                                <td><?= $equipment_log["action"] ?></td>
-
-                                <td><?= $equipment_log["old_status"] ?></td>
-                                <td><?= $equipment_log["new_status"] ?></td>
                                 <td><?= $equipment_log["field"] ?></td>
                                 <td><?= $equipment_log["from"] ?></td>
                                 <td><?= $equipment_log["to"] ?></td>
@@ -221,6 +213,61 @@ $rs_equipment_event_log = get_equipment_event_log_for_item($equipment->getEquipm
         </div>
 
     </div>
+
+
+     <div class="row mt-3">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                   Current Loan Details
+                </div>
+
+                 <div class="card-body">
+                    <table class="table table-sm table-striped">
+                        <tbody>
+                        <tr>
+                            <th class="text-right">TimeStamp</th>
+                            <td class="text-left">2022-05-05</td>
+                        </tr>
+
+                         <tr>
+                            <th class="text-right">Loan Type</th>
+                            <td class="text-left">Student</td>
+                        </tr>
+
+                         <tr>
+                            <th class="text-right">Loan Status</th>
+                            <td class="text-left text-success">Active</td>
+                        </tr>
+
+                         <tr>
+                            <th class="text-right">Equipment Status</th>
+                            <td class="text-left">Working</td>
+                        </tr>
+
+                         <tr>
+                            <th class="text-right">ID</th>
+                            <td class="text-left">058964</td>
+                        </tr>
+
+                         <tr>
+                            <th class="text-right">Graduation Date</th>
+                            <td class="text-left">2025-05-13</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+     </div>
 
 </main>
 

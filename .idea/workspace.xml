@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09a054b2-4fc5-466e-980f-57dc2a171115" name="Changes" comment="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout.">
-      <change afterPath="$PROJECT_DIR$/jira/sample1.html" afterDir="false" />
+    <list default="true" id="09a054b2-4fc5-466e-980f-57dc2a171115" name="Changes" comment="Rename 'Item' to 'Equipment' in all relevant files&#10;&#10;Renamed all instances of 'Item' to 'Equipment' to reflect the new terminology. This includes file names, class names, method names, and database queries. Also, updated front-end components and documentation to match this change.">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/data-tables/KeyTable-2.8.2/js/dataTables.keyTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-tables/KeyTable-2.8.2/js/dataTables.keyTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/data-tables/datatables.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-tables/datatables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/data-tables/jQuery-3.6.0/jquery-3.6.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data-tables/jQuery-3.6.0/jquery-3.6.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Equipment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/ItemEventLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/EquipmentEventLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/item_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/equipment_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/item_event_log_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/equipment_event_log_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate.php" beforeDir="false" afterPath="$PROJECT_DIR$/generate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipment-details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_events.php" beforeDir="false" afterPath="$PROJECT_DIR$/search_events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipment-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipment-details.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +103,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;php.add.doc.comment.for.fields.panel.add.php.doc&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PHP&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -150,8 +138,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
-        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
       </set>
     </attachedChunks>
   </component>
@@ -177,7 +165,13 @@
       <workItem from="1725971407629" duration="5679000" />
       <workItem from="1726515665004" duration="818000" />
       <workItem from="1726575500943" duration="2067000" />
-      <workItem from="1726602160901" duration="4075000" />
+      <workItem from="1726602160901" duration="13459000" />
+      <workItem from="1726771082150" duration="4735000" />
+      <workItem from="1727194338693" duration="31000" />
+      <workItem from="1727884763712" duration="7000" />
+      <workItem from="1727884884811" duration="1757000" />
+      <workItem from="1728335986980" duration="21000" />
+      <workItem from="1728392192463" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -243,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725979313723</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Rename 'Item' to 'Equipment' in all relevant files&#10;&#10;Renamed all instances of 'Item' to 'Equipment' to reflect the new terminology. This includes file names, class names, method names, and database queries. Also, updated front-end components and documentation to match this change.">
+      <option name="closed" value="true" />
+      <created>1726606533587</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726606533587</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +273,8 @@
     <MESSAGE value="Add new cache masks for QR generation and remove old schemas" />
     <MESSAGE value="Update href attribute and clean up configuration files" />
     <MESSAGE value="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add event log functionality and update item details&#10;&#10;Integrated ItemEventLog class and related database functionality for tracking item events. Updated the frontend to display these logs and made minor adjustments to item detail layout." />
+    <MESSAGE value="Rename 'Item' to 'Equipment' in all relevant files&#10;&#10;Renamed all instances of 'Item' to 'Equipment' to reflect the new terminology. This includes file names, class names, method names, and database queries. Also, updated front-end components and documentation to match this change." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename 'Item' to 'Equipment' in all relevant files&#10;&#10;Renamed all instances of 'Item' to 'Equipment' to reflect the new terminology. This includes file names, class names, method names, and database queries. Also, updated front-end components and documentation to match this change." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
